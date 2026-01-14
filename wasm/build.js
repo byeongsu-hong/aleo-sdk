@@ -33,7 +33,7 @@ async function buildWasm(network) {
                     rustc: [
                         "-C", "link-arg=--max-memory=4294967296",
                     ],
-                    wasmOpt: ["-O", "--enable-threads", "--enable-bulk-memory", "--enable-bulk-memory-opt", "--enable-nontrapping-float-to-int"],
+                    wasmOpt: ["-O", "--enable-threads", "--enable-bulk-memory", "--enable-nontrapping-float-to-int"],
                 },
 
                 experimental: {
